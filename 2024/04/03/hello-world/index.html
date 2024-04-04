@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="這邊是用來放我寫程式的東西
-程式學習Book
-猜數字遊戲1234567891011121314151617181920import randomsecretNumber = random.randint(1, 20)print(&amp;#x27;I am thinking of a number between 1 and 20.&amp;#x27;)for guessesTaken in range(1, 7):    print(&amp;#x27;Take a guess.&amp;#x27;)    guess = int(input())    if guess &amp;lt; secretNumber:        print(&amp;#x27;Y...">
+程式學習Book(https://www.kobo.com/tw/zh/ebook/automate-the-boring-stuff-with-python-2nd-edition)
+猜數字遊戲1234567891011121314151617181920import randomsecretNumber = random.randint(1, 20)print(&amp;#x27;I am thinking of a number between 1 and 20.&amp;#x27;)for guessesTaken in range(1, 7):    print(&amp;#x27;Take a guess...">
     
         <link rel="icon" href="/favicon.ico">
     
@@ -34,7 +34,7 @@
     <div id="nav">
         <div class="nav-img" id="nav-img"></div>
         <div class="sentences">
-            Be yourself; everyone else is already taken.
+            How goes the world with you?
         </div>
     </div>
 </header>
@@ -54,7 +54,7 @@
             
         </div>
         <p>這邊是用來放我寫程式的東西</p>
-<h1 id="程式學習"><a href="#程式學習" class="headerlink" title="程式學習"></a>程式學習</h1><h3 id="Book"><a href="#Book" class="headerlink" title="Book"></a>Book</h3><p><img src="https://cdn.kobo.com/book-images/e24a137b-4882-45b7-91b3-90c292ad278c/1200/1200/False/automate-the-boring-stuff-with-python-2nd-edition.jpg" alt="新手用的書"></p>
+<h1 id="程式學習"><a href="#程式學習" class="headerlink" title="程式學習"></a>程式學習</h1><h3 id="Book"><a href="#Book" class="headerlink" title="Book"></a>Book</h3><p><img src="https://cdn.kobo.com/book-images/e24a137b-4882-45b7-91b3-90c292ad278c/1200/1200/False/automate-the-boring-stuff-with-python-2nd-edition.jpg" alt="新手用的書">(<a target="_blank" rel="noopener" href="https://www.kobo.com/tw/zh/ebook/automate-the-boring-stuff-with-python-2nd-edition">https://www.kobo.com/tw/zh/ebook/automate-the-boring-stuff-with-python-2nd-edition</a>)</p>
 <h3 id="猜數字遊戲"><a href="#猜數字遊戲" class="headerlink" title="猜數字遊戲"></a><strong>猜數字遊戲</strong></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">secretNumber = random.randint(<span class="number">1</span>, <span class="number">20</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;I am thinking of a number between 1 and 20.&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> guessesTaken <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">7</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;Take a guess.&#x27;</span>)</span><br><span class="line">    guess = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> guess &lt; secretNumber:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Your guess is too low.&#x27;</span>)</span><br><span class="line">    <span class="keyword">elif</span> guess &gt; secretNumber:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Your guess is too high.&#x27;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">break</span>    <span class="comment"># This condition is the correct guess!</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> guess == secretNumber:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;Good job! You guessed my number in &#x27;</span> + <span class="built_in">str</span>(guessesTaken) + <span class="string">&#x27;guesses!&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;Nope. The number I was thinking of was &#x27;</span> + <span class="built_in">str</span>(secretNumber))</span><br></pre></td></tr></table></figure>
 
 
